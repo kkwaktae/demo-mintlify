@@ -1,0 +1,25 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+thead,
+tbody {
+  width: fit-content;
+}
+
+th,
+td {
+  width: 5%;
+  border: 1px solid #ddd;
+  padding: 8px !important;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+.text-center {
+  text-align: center;
+}
