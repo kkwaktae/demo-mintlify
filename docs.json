@@ -1,78 +1,52 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "테스트용 웨이버 API Docs",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#5600BA",
+    "light": "#5600BA",
+    "dark": "#5600BA"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Get Started",
-            "pages": [
-              "introduction",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
-            ]
-          }
-        ]
-      },
       {
         "tab": "API Reference",
         "groups": [
           {
             "group": "API Documentation",
             "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              {
+                "group": "Artist",
+                "pages": [
+                  "api-reference/endpoints/artist/list/artist",
+                  "api-reference/endpoints/artist/retrieve/me",
+                  "api-reference/endpoints/artist/retrieve/profile",
+                  "api-reference/endpoints/artist/retrieve/artist-id",
+                  "api-reference/endpoints/artist/retrieve/artist-id-bank",
+                  "api-reference/endpoints/artist/retrieve/artist-id-discography",
+                  "api-reference/endpoints/artist/create/artist-id-follow"
+                ]
+              },
+              {
+                "group": "ArtistSwitch",
+                "pages": [
+                  "api-reference/endpoints/artist-switch/retrieve/switch-request-id",
+                  "api-reference/endpoints/artist-switch/create/switch-request",
+                  "api-reference/endpoints/artist-switch/create/check-national"
+                ]
+              },
+              {
+                "group": "Bank",
+                "pages": ["api-reference/endpoints/bank/list/bank"]
+              }
             ]
           }
         ]
       }
     ],
     "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
+      "anchors": []
     }
   },
   "logo": {
@@ -80,23 +54,7 @@
     "dark": "/logo/dark.svg"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
+    "links": []
   },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
-  }
+  "footer": {}
 }
