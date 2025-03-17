@@ -66,6 +66,15 @@
       "anchors": []
     }
   },
+  "api": {
+    "mdx": {
+      "auth": {
+        "method": "bearer",
+        "name": "Authorization"
+      },
+      "server": "https://api.dev.wavbor.com"
+    }
+  },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
